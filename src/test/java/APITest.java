@@ -17,7 +17,6 @@ public class APITest {
         int statusCode = res.getStatusCode();
         Assert.assertEquals(statusCode, 200);
 
-
    }
     @Test(priority = 1)
     void test2(){

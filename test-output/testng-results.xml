@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-27T10:55:07 PKT" name="Default Suite" finished-at="2023-07-27T10:55:14 PKT" duration-ms="7898">
+  <suite started-at="2023-07-27T13:11:41 PKT" name="Default Suite" finished-at="2023-07-27T13:11:49 PKT" duration-ms="8245">
     <groups>
     </groups>
-    <test started-at="2023-07-27T10:55:07 PKT" name="Entertainer" finished-at="2023-07-27T10:55:14 PKT" duration-ms="7898">
+    <test started-at="2023-07-27T13:11:41 PKT" name="Entertainer" finished-at="2023-07-27T13:11:49 PKT" duration-ms="8245">
       <class name="APITest">
-        <test-method signature="test2()[pri:1, instance:APITest@400cff1a]" started-at="2023-07-27T10:55:07 PKT" name="test2" finished-at="2023-07-27T10:55:14 PKT" duration-ms="7050" status="PASS">
+        <test-method signature="test2()[pri:1, instance:APITest@1a052a00]" started-at="2023-07-27T13:11:41 PKT" name="test2" finished-at="2023-07-27T13:11:48 PKT" duration-ms="7286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method signature="test1()[pri:2, instance:APITest@400cff1a]" started-at="2023-07-27T10:55:14 PKT" name="test1" finished-at="2023-07-27T10:55:14 PKT" duration-ms="707" status="PASS">
+        <test-method signature="test1()[pri:2, instance:APITest@1a052a00]" started-at="2023-07-27T13:11:48 PKT" name="test1" finished-at="2023-07-27T13:11:49 PKT" duration-ms="784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
