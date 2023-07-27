@@ -1,13 +1,11 @@
-package demo;
+package BasicRestAssured;
 
 import static io.restassured.RestAssured.*;
 import io.restassured.response.Response;
 import junit.framework.Assert;
 import org.testng.annotations.Test;
-import static io.restassured.matcher.RestAssuredMatchers.*;
-import static org.hamcrest.Matchers.*;
 
-import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
 
 public class ApiTest {
     @Test (priority = 2)

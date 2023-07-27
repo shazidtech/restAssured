@@ -1,8 +1,6 @@
-package demo;
+package BasicRestAssured;
 
 import io.restassured.http.ContentType;
-import io.restassured.internal.mapping.JsonbMapper;
-import netscape.javascript.JSObject;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 

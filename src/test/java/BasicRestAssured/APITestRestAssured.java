@@ -1,9 +1,11 @@
+package BasicRestAssured;
+
 import static io.restassured.RestAssured.*;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class APITest {
+public class APITestRestAssured {
     @Test (priority = 2)
     void test1(){
         Response res= get("https://reqres.in/api/users?page=2");
