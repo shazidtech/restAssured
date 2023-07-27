@@ -1,7 +1,9 @@
 package GoogleMapAPI;
+import files.ReUsableMethods;
 import files.payload;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
+import junit.framework.Assert;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
@@ -46,9 +48,10 @@ public class GoogleMap {
                 then().
                 log().all().assertThat().statusCode(200).extract().response().asString();
 
-        JsonPath  js1 = new JsonPath(getPlaceResponse);
+        JsonPath js1 = ReUsableMethods.rawToJson(getPlaceResponse);
         String actualAddress = js1.getString("address");
         System.out.println(actualAddress);
+        Assert.assertEquals(actualAddress,newAddress);
 
     }
 }
