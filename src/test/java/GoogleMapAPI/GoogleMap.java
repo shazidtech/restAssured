@@ -5,17 +5,26 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import junit.framework.Assert;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
 public class GoogleMap {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         //add place  -> update place -> get place if new place is available
-
+        // Lecture no 38 - How to handle with static json payload
+        // content of the file to string  -> conetent of file can convert into Byte  -> Byte data to String
+        //
         RestAssured.baseURI="https://rahulshettyacademy.com/";
 
         String response = given().log().all().queryParam("key", "qaclick123").
-                    header("Content-Type", "application/json").body(payload.AddPlace()).
+                    header("Content-Type", "application/json").
+                    body(new String(Files.readAllBytes(Paths.get("C:\\Users\\ENT18010731\\Downloads\\JSON\\addPlace.json")))).
                 when().post("maps/api/place/add/json").
                 then().assertThat().statusCode(200).
                     body("scope",equalTo("APP")).
